@@ -6,15 +6,7 @@
 
 using namespace std;
 
-
-
- 
-
-
-
 vector<double> history = {};
-
-
 
 void clear() {
     cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
@@ -34,10 +26,8 @@ void UpdateDisplay(string mathdisplay){
        }*/
     
        cout << "|||||    " << mathdisplay << endl;
-    puts("==================================================\n");
+    puts("==================================================");
 }
-
-
 
 void GetInput(double calc, string mathstring){
     string prev = mathstring;
@@ -51,7 +41,7 @@ void GetInput(double calc, string mathstring){
     if(num.substr (0,1) == "<"){
         if(num.length() > 1){
             num = num.erase(0, 1);
-            num = to_string(history[stoi(num) - 1]);
+            num = to_string(history[stoi(num)]);
         }
         else num = to_string(history[0]);
     }
@@ -63,9 +53,8 @@ void GetInput(double calc, string mathstring){
    cin >> c;
    char oppString[2] = {'o', c};
     
-    puts("enter second integer\n");
+   puts("enter second integer\n");
 
-    
    string num2;
    cin >> num2;
     
@@ -108,9 +97,6 @@ void GetInput(double calc, string mathstring){
      
     UpdateDisplay(newMathString);
 }
-
-
-
 
 
 int main()
