@@ -25,14 +25,14 @@ void UpdateDisplay(string mathdisplay){
            cout << *disp;
        }*/
     
-       cout << "|||||    " << mathdisplay << endl;
+       cout << "|||||||||||     " << mathdisplay << "     ||||||||||" << endl;
     puts("==================================================");
 }
 
 void GetInput(double calc, string mathstring){
     string prev = mathstring;
     
-    puts("enter an integer\nor enter '<' to use currentlly displayed answer enter\nor enter '<2' or '<3' etc to use older numbers\n");
+    puts("Enter an numeric value\nor enter '<' to use currentlly displayed answer enter\nor enter '<1' or '<2' or '<3'...etc\nto access older cleared values\n____________________________________________________\n\n");
     string num;
     cin >> num;
     
@@ -61,23 +61,23 @@ void GetInput(double calc, string mathstring){
            switch(oppString[1]){
                   case 'x':
                        opp = " x ";
-                       calc = calc + stoi(num);
-                       calc = calc * stoi(num2);
+                       calc = calc + stof(num);
+                       calc = calc * stof(num2);
                        break;
                    case '/':
                        opp = " / ";
-                       calc = calc + stoi(num);
-                       calc = calc / stoi(num2);
+                       calc = calc + stof(num);
+                       calc = calc / stof(num2);
                        break;
                    case '+':
                         opp = " + ";
-                        calc = calc + stoi(num);
-                        calc = calc + stoi(num2);
+                        calc = calc + stof(num);
+                        calc = calc + stof(num2);
                        break;
                    case '-':
                        opp = " - ";
-                       calc = calc + stoi(num);
-                       calc = calc - std::stoi(num2);
+                       calc = calc + stof(num);
+                       calc = calc - std::stof(num2);
                        break;
                    case 'c':
                        num = "";
@@ -110,8 +110,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
-
