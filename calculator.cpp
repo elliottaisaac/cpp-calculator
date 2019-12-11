@@ -32,7 +32,7 @@ void UpdateDisplay(string mathdisplay){
 void GetInput(double calc, string mathstring){
     string prev = mathstring;
     
-    puts("Enter an numeric value\nor enter '<' to use currentlly displayed answer enter\nor enter '<1' or '<2' or '<3'...etc\nto access older cleared values\n____________________________________________________\n\n");
+    puts("Enter an numeric value\nor enter '<1' to use currentlly displayed answer\nor enter '<2' or '<3' or '<4'...etc\nto access older cleared values\n____________________________________________________\n\n");
     string num;
     cin >> num;
     
@@ -111,3 +111,4 @@ int main()
     }
     return 0;
 }
+
