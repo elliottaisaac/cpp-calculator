@@ -41,7 +41,8 @@ void GetInput(double calc, string mathstring){
     if(num.substr (0,1) == "<"){
         if(num.length() > 1){
             num = num.erase(0, 1);
-            num = to_string(history[stoi(num)]);
+            num = to_string(history[stoi(num) - 1]);
+            
         }
         else num = to_string(history[0]);
     }
